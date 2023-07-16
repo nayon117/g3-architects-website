@@ -8,9 +8,11 @@
   padding: 0;
 }
 .btn {
-  border-radius: 4px;
+  border-radius: .4rem;
   background: #ff900e;
   font-size: 1.2rem;
+  font-weight: 600;
+  cursor: pointer;
   border: none;
   padding: 0.5em 1em;
   color: #fff;
@@ -68,7 +70,37 @@ nav {
 .banner-body {
   color: #727272;
   padding: 1.5em 0;
+  width: 90%;
+  max-width:868px;
 }
 .banner-img {
+  width: 1440px;
   max-width: 100%;
+}
+
+/*=============================media queries=========================  */
+/* mobile devices */
+@media screen and (max-width:576px) {
+  header{
+    padding: 1.25em;
+  }
+  nav{
+    flex-direction: column;
+  }
+  .nav-list{
+     padding-top: .6em;
+  }
+}
+
+/* Tablet or medium devices  */
+@media screen and (min-width:577px) and (max-width:992px) {
+  header{
+    padding: 1.25em;
+  }
+  nav{
+    flex-direction: column;
+  }
+  .nav-list{
+    padding-top: .6em;
+ }
 }
