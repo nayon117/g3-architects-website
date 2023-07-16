@@ -197,6 +197,18 @@ features section
   margin-top: 3em;
   padding: 1.8em;
 }
+/* =======footer styles======== */
+footer {
+  width: 80%;
+  max-width: 1440px;
+  border-radius: .5em;
+  background: #fff4e7;
+  color: #424242;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1em 2em;
+  margin: 0 auto;
+}
 
 /*=============================media queries=========================  */
 /* mobile devices */
@@ -220,18 +232,7 @@ features section
     position: static;
   }
 }
-/* =======footer styles======== */
-footer {
-  width: 80%;
-  max-width: 1440px;
-  border-radius: .5em;
-  background: #fff4e7;
-  color: #424242;
-  text-align: center;
-  font-size: 1.2rem;
-  padding: 1em 2em;
-  margin: 0 auto;
-}
+
 
 /* Tablet or medium devices  */
 @media screen and (min-width: 577px) and (max-width: 992px) {
