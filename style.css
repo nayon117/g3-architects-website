@@ -88,7 +88,7 @@ main {
   max-width: 1440px;
   margin: 3em auto;
 }
-section{
+section {
   margin-top: 3em;
 }
 
@@ -116,30 +116,70 @@ section{
   font-weight: 700;
   color: #ff900e;
 }
+/*============== 
+features section 
+ ===============*/
+
+.features {
+  display: flex;
+  align-items: center;
+  gap: 6em;
+  margin-top: 6em;
+}
+.features .section-title {
+  border-left: 0.125em solid #ff900e;
+  padding-left: 0.8em;
+}
+.feature-card {
+  border-radius: 0.5em;
+  background: #fff;
+  box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+  padding: 1.8em;
+  margin-bottom: 1.1em;
+}
+.ten-years-badge {
+  border-radius: .5em;
+  background: #ff900e;
+  color: white;
+  max-width: 28%;
+  padding: 1em;
+  text-align: center;
+  position: relative;
+  bottom: 2.8em;
+  right: 1.6em;
+}
+.ten-years-badge h2{
+  font-size: 1.2rem;
+  margin: 0;
+}
+.ten-years-badge p{
+  font-size: .8rem;
+   
+}
 
 /*==============
  facts container
  ===============*/
- 
- .facts-card-container{
+
+.facts-card-container {
   display: flex;
   justify-content: space-around;
   align-items: center;
   gap: 1.2em;
   /* flex-wrap: wrap; */
- }
-  
+}
+
 .card {
-  border-radius: .5em;
+  border-radius: 0.5em;
   border: 0.0625em solid #ff900e;
   text-align: center;
-  padding: 3em 2em ;
+  padding: 3em 2em;
   font-weight: 600;
 }
-.card-stats{
+.card-stats {
   font-size: 2.8rem;
 }
-.card-title{
+.card-title {
   color: #727272;
   font-size: 1.2rem;
   font-weight: 600;
@@ -147,10 +187,10 @@ section{
 /*==================
  sponsers section 
 ===================== */
-.sponsers{
+.sponsers {
   text-align: center;
 }
-.sponsers-img-container{
+.sponsers-img-container {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -166,14 +206,20 @@ section{
     padding: 1.25em;
   }
   nav,
-  .teams-container, .facts-card-container, .sponsers-img-container {
+  .teams-container,
+  .facts-card-container,
+  .sponsers-img-container,
+  .features {
     flex-direction: column;
   }
   .nav-list,
   .teams-title {
     padding-top: 0.6em;
   }
-  
+  .ten-years-badge{
+    padding: .1em;
+    position: static;
+  }
 }
 
 /* Tablet or medium devices  */
@@ -182,12 +228,14 @@ section{
     padding: 1.25em;
   }
   nav,
-  .teams-container, .facts-card-container, .sponsers-img-container {
+  .teams-container,
+  .facts-card-container,
+  .sponsers-img-container,
+  .features {
     flex-direction: column;
   }
   .nav-list,
   .teams-title {
     padding-top: 0.6em;
   }
-  
 }
