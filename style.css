@@ -7,6 +7,16 @@
   margin: 0;
   padding: 0;
 }
+.text-description{
+  color: #727272;
+  padding: 1.5em 0;
+  width: 90%;
+  max-width:868px;
+}
+.img{
+  
+  max-width: 100%;
+}
 .btn {
   border-radius: .4rem;
   background: #ff900e;
@@ -67,16 +77,51 @@ nav {
   font-weight: 700;
   color: #131313;
 }
-.banner-body {
-  color: #727272;
-  padding: 1.5em 0;
+
+
+/*============= 
+main styles
+=============== */
+main{
   width: 90%;
-  max-width:868px;
+  max-width: 1440px;
+  margin: 3em auto;
 }
-.banner-img {
-  width: 1440px;
-  max-width: 100%;
+
+/* teams styles ======== */
+.teams-container{
+  display: flex;
+  align-items: center;
 }
+.teams-img-container{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap: 1.5rem;
+}
+.teams-content{
+  padding: 0em 4.5em;
+}
+.teams-title{
+  font-size: 2.7rem;
+}
+.quick-list{
+  color: #727272;
+  font-weight: 500;
+}
+.text-features{
+  font-weight: 700;
+  color: #FF900E;
+}
+ 
+
+
+
+
+
+
+
+
+
 
 /*=============================media queries=========================  */
 /* mobile devices */
@@ -84,10 +129,10 @@ nav {
   header{
     padding: 1.25em;
   }
-  nav{
+  nav, .teams-container{
     flex-direction: column;
   }
-  .nav-list{
+  .nav-list,.teams-title{
      padding-top: .6em;
   }
 }
@@ -97,10 +142,10 @@ nav {
   header{
     padding: 1.25em;
   }
-  nav{
+  nav, .teams-container{
     flex-direction: column;
   }
-  .nav-list{
+  .nav-list, .teams-title{
     padding-top: .6em;
  }
 }
