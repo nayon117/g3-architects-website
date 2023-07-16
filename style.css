@@ -138,7 +138,7 @@ features section
   margin-bottom: 1.1em;
 }
 .ten-years-badge {
-  border-radius: .5em;
+  border-radius: 0.5em;
   background: #ff900e;
   color: white;
   max-width: 28%;
@@ -148,13 +148,12 @@ features section
   bottom: 2.8em;
   right: 1.6em;
 }
-.ten-years-badge h2{
+.ten-years-badge h2 {
   font-size: 1.2rem;
   margin: 0;
 }
-.ten-years-badge p{
-  font-size: .8rem;
-   
+.ten-years-badge p {
+  font-size: 0.8rem;
 }
 
 /*==============
@@ -216,10 +215,22 @@ features section
   .teams-title {
     padding-top: 0.6em;
   }
-  .ten-years-badge{
-    padding: .1em;
+  .ten-years-badge {
+    padding: 0.1em;
     position: static;
   }
+}
+/* =======footer styles======== */
+footer {
+  width: 80%;
+  max-width: 1440px;
+  border-radius: .5em;
+  background: #fff4e7;
+  color: #424242;
+  text-align: center;
+  font-size: 1.2rem;
+  padding: 1em 2em;
+  margin: 0 auto;
 }
 
 /* Tablet or medium devices  */
